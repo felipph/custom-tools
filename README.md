@@ -14,7 +14,7 @@ URL: https://gurselgazii.medium.com/enhancing-spring-boot-rest-apis-with-threadl
 
 Response:
 
-```markdown
+
 [Open in app](https://rsci.app.link/?%24canonical_url=https%3A%2F%2Fmedium.com%2Fp%2F6c13eb63da8c&%7Efeature=LoOpenInAppButton&%7Echannel=ShowPostUnderUser&source=---top_nav_layout_nav----------------------------------)Sign up
 [Sign in](https://medium.com/m/signin?operation=login&redirect=https%3A%2F%2Fgurselgazii.medium.com%2Fenhancing-spring-boot-rest-apis-with-threadlocal-6c13eb63da8c&source=post_page---top_nav_layout_nav-----------------------global_nav-----------)
 [Write](https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fmedium.com%2Fnew-story&source=---top_nav_layout_nav-----------------------new_post_topnav-----------)Sign up
@@ -121,4 +121,3 @@ Using `ThreadLocal` with Spring Boot REST APIs offers a powerful way to maintain
 [![Gürsel Gazi İçtüzer](https://miro.medium.com/v2/resize:fill:144:144/1*Vg0gNsFzrjM5ElBt0XnS5A.jpeg)](/?source=post_page---post_author_info--6c13eb63da8c--------------------------------)Follow[Written by Gürsel Gazi İçtüzer
 ------------------------------](/?source=post_page---post_author_info--6c13eb63da8c--------------------------------)[76 Followers](/followers?source=post_page---post_author_info--6c13eb63da8c--------------------------------)Senior Software Developer
 Follow[Help](https://help.medium.com/hc/en-us?source=post_page-----6c13eb63da8c--------------------------------)[Status](https://medium.statuspage.io/?source=post_page-----6c13eb63da8c--------------------------------)[About](https://medium.com/about?autoplay=1&source=post_page-----6c13eb63da8c--------------------------------)[Careers](https://medium.com/jobs-at-medium/work-at-medium-959d1a85284e?source=post_page-----6c13eb63da8c--------------------------------)[Press](pressinquiries@medium.com?source=post_page-----6c13eb63da8c--------------------------------)[Blog](https://blog.medium.com/?source=post_page-----6c13eb63da8c--------------------------------)[Privacy](https://policy.medium.com/medium-privacy-policy-f03bf92035c9?source=post_page-----6c13eb63da8c--------------------------------)[Terms](https://policy.medium.com/medium-terms-of-service-9db0094a1e0f?source=post_page-----6c13eb63da8c--------------------------------)[Text to speech](https://speechify.com/medium?source=post_page-----6c13eb63da8c--------------------------------)[Teams](https://medium.com/business?source=post_page-----6c13eb63da8c--------------------------------)
-```
