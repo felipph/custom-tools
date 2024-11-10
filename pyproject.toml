@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "custon-tools-calado"
+name = "custom-tools-calado"
 version = "0.1.0"
 description = ""
 authors = ["Felipph Calado <luiz.calado@mpc.pa.gov.br>"]
