@@ -1,6 +1,8 @@
+import markdownify as md
 import cloudscraper
 from bs4 import BeautifulSoup
 from markdownify import markdownify as md
+
 import re
 
 
@@ -27,28 +29,23 @@ def save_to_file(content, filename):
     except Exception as e:
         print(f"Error saving file: {e}")
 
-def main():
-    url = input("Enter the URL of the page to scrape: ")
-    html_content = fetch_web_page(url)
-    
-    if html_content:
-        soup = BeautifulSoup(html_content, 'html.parser')
-        # Extract main content: this can be adapted to specific sites for more precision
-        main_content = soup.body if soup.body else soup
-        markdown_content = convert_to_markdown(str(main_content))
-        
+def convert_api_data_to_markdown(api_data):
+    """Convert API data to Markdown"""
+    if 'conteudo' in api_data:
+        markdown_content = convert_to_markdown(api_data['conteudo'])
         if markdown_content:
-            filename = "scraped_content.md"
-            save_to_file(markdown_content, filename)
+            return markdown_content
+        else:
+            print("Failed to convert API data to Markdown")
+            return None
+    else:
+        print("No 'content' field found in API data")
+        return None
 
 def clear_text(text):
-
-    text = re.sub(r'\n\n+', "\n",text, flags=re.DOTALL)
-    text = re.sub(r'\n\r+', "\n",text, flags=re.DOTALL)
-    text =  re.sub(r' +', ' ',text, flags=re.DOTALL)
-    text =  re.sub(r'\r', '',text, flags=re.DOTALL)
-    text =  re.sub(r'\t', '',text, flags=re.DOTALL)
-    return  re.sub(r'\\.?', '',text, flags=re.DOTALL)
-
-if __name__ == "__main__":
-    main()
+    text = re.sub(r'\n\n+', "\n", text, flags=re.DOTALL)
+    text = re.sub(r'\n\r+', "\n", text, flags=re.DOTALL)
+    text = re.sub(r' +', ' ', text, flags=re.DOTALL)
+    text = re.sub(r'\r', '', text, flags=re.DOTALL)
+    text = re.sub(r'\t', '', text, flags=re.DOTALL)
+    return re.sub(r'\\.?', '', text, flags=re.DOTALL)

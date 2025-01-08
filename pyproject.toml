@@ -12,9 +12,11 @@ uvicorn = "^0.32.0"
 requests = "^2.32.3"
 beautifulsoup4 = "^4.12.3"
 markdownify = "^0.13.1"
-setuptools = "^75.3.0"
-undetected-chromedriver = "^3.5.5"
 cloudscraper = "^1.2.71"
+undetected-chromedriver = "^3.5.5"
+setuptools = "^75.4.0"
+pondpond = "^1.4.1"
+scrapy = "^2.12.0"
 
 
 [build-system]
