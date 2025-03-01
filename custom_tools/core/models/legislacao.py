@@ -9,3 +9,5 @@ class Legislacao(BaseModel):
     data_publicacao: str = Field(..., description="Data de Publicação")
     tipo_legislacao: str = Field(..., description="Tipo de Legislacao")
     titulo: str = Field(..., description="Título da legislacao")
+    ementa: str = Field(..., description="Ementa do documento")
+    conteudo: str = Field(..., description="Conteúdo do documento")
